@@ -8,6 +8,7 @@ const app = express();
 app.use(express.json());
 connectDB();
  app.use("/api/auth", require("./routes/authRoutes"));
+ app.use("/courses",require("./routes/courseRoutes"))
 
 
 
